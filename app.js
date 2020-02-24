@@ -15,7 +15,7 @@ let posts = [
 function findPostIndexById(id) {
   return posts.findIndex(o => o.id === id);
 }
-
+// new
 server.get('/posts', (req, res) => {
     setTimeout(() => {
         if (Math.random() > 0.5) {
