@@ -7,7 +7,7 @@ server.use(express.json());
 
 let nextPostId = 1;
 let posts = [
-  { id: nextPostId++, category: "Food", price: 90 },
+  { id: nextPostId++, category: "Food",   price: 90 },
   { id: nextPostId++, category: "Drinks", price: 120 },
   { id: nextPostId++, category: "Burger", price: 92 },
   { id: nextPostId++, category: "Turism", price: 0 }
@@ -36,7 +36,7 @@ server.post("/posts", (req, res) => {
       {
         id: nextPostId++,
         category: body.category,
-        price: 0
+        price: body.price
       }
     ];
     res.send(posts);

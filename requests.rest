@@ -18,7 +18,7 @@ Content-Type: application/json
 {
     "id": 0,
     "category": "first POST",
-    "price":0
+    "price":12
 } 
 
 ### update posts
