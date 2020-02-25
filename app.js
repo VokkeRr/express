@@ -56,4 +56,4 @@ server.delete("/posts/:id", (req, res) => {
   posts = posts.filter(o => o.id != id);
   res.send(posts);
 });
-server.listen(process.env.PORT || 9999);6*"?"
+server.listen(process.env.PORT || 9999);
